@@ -7,9 +7,9 @@ DB設計
 |mail|string|null: false|
 
 ### Association
-- has_many :groups, through: members
+- has_many :groups, through: groups_users
 - has_many :messages
-- has_many :members
+- has_many :groups＿users
 
 ## groupsテーブル
 |Column|Type|Options|
@@ -24,7 +24,7 @@ DB設計
 ## messagesテーブル
 |Column|Type|Options|
 |------|----|-------|
-|body|text|null: false|
+|body|text||
 |image|string||
 |group_id|interger|index: true, null: false, foreign_key: true|
 |user_id|interger|index: true, null: false, foreign_key: true|
