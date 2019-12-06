@@ -29,8 +29,8 @@ $time-color: #999999;
         display: flex;
         align-items: center;
         padding: 0px 20px;
-    }
-    .side-header__box{
+    
+    &__box{
       width: 100%;
       height: 20px;
       font-weight: bold;
@@ -41,7 +41,7 @@ $time-color: #999999;
         float: left;
         margin: 0;
       }
-      .side-header__box__menu{
+      &__menu{
         float: right;
         margin: 0;
         display: flex;
@@ -53,6 +53,7 @@ $time-color: #999999;
         }
       }
     }
+  }
     
     .groups{
       background: #2f3e51;
@@ -60,12 +61,12 @@ $time-color: #999999;
       padding: 20px 20px 0;
 
       .group{
-        .group__group-name{
+        &__group-name{
           font-size: 15px;
           margin-bottom: 5px;
         }
 
-        .group__group-message{
+        &__group-message{
           font-size: 11px;
           margin-bottom: 40px;
         }
@@ -109,6 +110,7 @@ $time-color: #999999;
         border: solid 1px #38aef0;
         position: absolute;
         right: 40px;
+        text-decoration: none;
       }
     }
 
@@ -152,6 +154,7 @@ $time-color: #999999;
         color: $letter-white;
         cursor: pointer;
         line-height: 50px;
+        text-decoration: none;
       }
 
       &__input-box{
