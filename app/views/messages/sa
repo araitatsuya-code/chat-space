@@ -1,10 +1,4 @@
-.wrapper
-
-  = render "side_bar"
-  = render "main_chat"
-
-
-  .chat-side
+.chat-side
     .side-header
       .side-header__box
         .side-header__box__name
@@ -16,6 +10,13 @@
           %li.side-header__box__menu__new-group
             %a{href: '#'}
               %i.fa.fa-cog
+
+
+        
+      
+        
+
+      
     .groups
       .group
         .group__group-name techcamp
@@ -27,6 +28,15 @@
         .group__group-name techcamp
         .group__group-message まだメッセージがありません
 
+
+
+
+
+
+
+
+
+    
   .chat-main
     .main-header
       .main-header__left-box
@@ -54,10 +64,9 @@
       .form__input-box
         .form__input-box__text
           %textarea{ placeholder: 'type a message' }
-        -# .form__input-box__image
-        -#   %i.far.fa-image
-        %label{class: "form__input-box__image"}
-          = icon('far', 'image')
-          %input{type: "file"}
+        .form__input-box__image
+          %i.far.fa-image
+    
+         
       .form__submit-btn
         %a.send-btn Send
