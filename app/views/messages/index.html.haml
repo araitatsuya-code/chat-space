@@ -5,7 +5,7 @@
     .side-header
       .side-header__box
         .side-header__box__name
-          %p TECHEXP
+          = current_user.name
         .side-header__box__menu
           .side-header__box__menu__edit-user
           = link_to '', class: 'side-header__box__menu__edit-user' do
