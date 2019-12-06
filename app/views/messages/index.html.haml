@@ -1,3 +1,53 @@
 .wrapper
   = render "side_bar"
   = render "main_chat"
+  .chat-side
+    .side-header
+      .side-header__box
+        .side-header__box__name
+          %p TECHEXP
+        .side-header__box__menu
+          .side-header__box__menu__edit-user
+          = link_to '', class: 'side-header__box__menu__edit-user' do
+            %i.fa.fa-edit
+          .side-header__box__menu__cog
+          = link_to '', class: 'side-header__box__menu__cog' do
+            %i.fa.fa-cog
+    .groups
+      .group
+        .group__group-name techcamp
+        .group__group-message まだメッセージがありません
+        .group__group-name techcamp
+        .group__group-message まだメッセージがありません
+        .group__group-name techcamp
+        .group__group-message まだメッセージがありません
+  .chat-main
+    .main-header
+      .main-header__left-box
+        %h2.main-header__left-box__current-group test
+        %ul.main-header__left-box__member-list  Member：
+      = link_to '', class: 'main-header__edit-btn' do
+        Edit
+    .messages
+      .message__upper-info
+        %p.message__upper-info__toker TECHEXP
+        %p.message__upper-info__date　2019/12/01(wed) 00:00:10
+      .message__text 今日の天気は曇りのち雨です。
+      .message__upper-info
+        %p.message__upper-info__toker メンバー
+        %p.message__upper-info__date　2019/12/01(wed) 00:00:10
+      .message__text 今日の天気は曇りのち雨です。
+      .message__upper-info
+        %p.message__upper-info__toker メンバー
+        %p.message__upper-info__date　2019/12/01(wed) 00:00:10
+      .message__text 今日の天気は曇りのち雨です。
+    .form
+      .form__input-box
+        .form__input-box__text
+          %textarea{ placeholder: 'type a message' }
+        %label{class: "form__input-box__image"}
+          = icon('far', 'image')
+          %input{type: "file"}
+      .form__submit
+      = link_to '', class: 'form__submit-btn' do
+        send
