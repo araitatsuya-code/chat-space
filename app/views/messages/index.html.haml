@@ -15,12 +15,13 @@
             %i.fa.fa-cog
     .groups
       .group
-        .group__group-name techcamp
-        .group__group-message まだメッセージがありません
-        .group__group-name techcamp
-        .group__group-message まだメッセージがありません
-        .group__group-name techcamp
-        .group__group-message まだメッセージがありません
+        - current_user.groups.each do |group|
+          .group
+            = link_to '#' do
+          .group__name
+            = group.name
+          .group__message
+            メッセージはまだありません。
   .chat-main
     .main-header
       .main-header__left-box
