@@ -8,19 +8,20 @@
           = current_user.name
         .side-header__box__menu
           .side-header__box__menu__edit-user
-          = link_to '', class: 'side-header__box__menu__edit-user' do
+          = link_to new_group_path, class: 'side-header__box__menu__edit-user' do
             %i.fa.fa-edit
           .side-header__box__menu__cog
-          = link_to '', class: 'side-header__box__menu__cog' do
+          = link_to edit_user_path(current_user), class: 'side-header__box__menu__cog' do
             %i.fa.fa-cog
     .groups
       .group
-        .group__group-name techcamp
-        .group__group-message まだメッセージがありません
-        .group__group-name techcamp
-        .group__group-message まだメッセージがありません
-        .group__group-name techcamp
-        .group__group-message まだメッセージがありません
+        - current_user.groups.each do |group|
+          .group
+            = link_to '#' do
+          .group__name
+            = group.name
+          .group__message
+            メッセージはまだありません。
   .chat-main
     .main-header
       .main-header__left-box
