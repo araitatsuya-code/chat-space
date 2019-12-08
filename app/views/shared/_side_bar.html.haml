@@ -1,0 +1,19 @@
+.side-header
+  .side-header__box
+    .side-header__box__name
+      = current_user.name
+    .side-header__box__menu
+      .side-header__box__menu__edit-user
+      = link_to new_group_path, class: 'side-header__box__menu__edit-user' do
+        %i.fa.fa-edit
+      .side-header__box__menu__cog
+      = link_to edit_user_path(current_user), class: 'side-header__box__menu__cog' do
+        %i.fa.fa-cog
+.groups
+  - current_user.groups.each do |group|
+    .group
+      = link_to group_messages_path(group) do
+      .group__name
+        = group.name
+      .group__message
+        = group.show_last_message
