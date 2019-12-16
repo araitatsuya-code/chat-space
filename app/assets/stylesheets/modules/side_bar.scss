@@ -26,12 +26,14 @@
   }
 
   .groups {
+
     background-color: $side_blue_light;
     height: calc(100vh - 100px);
-    padding: 0 20px;
+    padding: 20px;
+    text-decoration: none;
     .group {
       box-sizing: border-box;
-      padding: 20px 0 40px;
+      padding: 20px  40px;
       &__name {
         font-size: $side_group_name;
         color: $white;
@@ -39,8 +41,11 @@
       &__message {
         font-size: $side_group_message;
         margin-top: 5px;
-        color: $white;
       }
+    }
+    a {
+      text-decoration:none ;
+      color: $white;
     }
   }
 }
