@@ -19,7 +19,7 @@
 # 📘Usage
 
 ```
-$ git clone https://github.com/aocattleya/GroupChat-App.git
+$ git clone
 $ cd GroupChat-App
 $ bundle install
 $ rails db:create
@@ -32,15 +32,15 @@ $ rails s
 
 ## ・Asynchronous communication
 
-![Ajax](https://user-images.githubusercontent.com/39142850/68860107-2b9ebc00-072c-11ea-9849-08d1b0ad4637.gif)
+![Ajax]
 　
 ## ・Automatic updating
 
-![auto](https://user-images.githubusercontent.com/39142850/69133731-b9e2bb80-0af9-11ea-92c7-4cae24d9bb2c.gif)
+![auto]
 　
 ## ・Incremental search
 
-![Incremental search](https://user-images.githubusercontent.com/39142850/69483415-880b8500-0e6a-11ea-8ce5-f7770ec3c560.gif)
+![Incremental search]
 DB設計
 
 ## usersテーブル
