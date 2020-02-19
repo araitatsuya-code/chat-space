@@ -32,15 +32,10 @@ $ rails s
 
 ## ・Asynchronous communication
 
-![Ajax]
-　
 ## ・Automatic updating
 
-![auto]
-　
 ## ・Incremental search
 
-![Incremental search]
 DB設計
 
 ## usersテーブル
